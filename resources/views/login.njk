@@ -1,0 +1,36 @@
+{% extends "master" %}
+
+{% block content %}
+
+  {% if status == "register" %}
+    {{ form.open({action: "UsersController.create"}) }}
+  {% else %}
+    {{ form.open({action: "UsersController.login"}) }}
+  {% endif %}
+
+  {{ csrfField }}
+
+  <div>
+    {{ form.label("email", "Email") }}
+    {{ form.email("email") }}
+  </div>
+
+  {% if status == "register" %}
+  <div>
+    {{ form.label("username", "Username") }}
+    {{ form.text("username") }}
+  </div>
+  {% endif %}
+
+  <div>
+    {{ form.label("password", "Password") }}
+    {{ form.password("password") }}
+  </div>
+
+  <button>
+    {{ form.submit("Continue") }}
+  </button>
+
+  {{ form.close() }}
+
+{% endblock %}
