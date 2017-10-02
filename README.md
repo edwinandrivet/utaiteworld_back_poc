@@ -1,4 +1,4 @@
-AdonisJs Application poc that could serve the youtaite/utaite community! :)
+AdonisJs Application poc that could serve the youtaite/utaite community! :) (created as final project of Simplon.co)
 
 ## Build Setup
 
