@@ -6,6 +6,8 @@ AdonisJs Application poc that could serve the youtaite/utaite community! :) (cre
 # install dependencies
 npm install
 
+# Add your YouTube API key in the .env file for the env variable to be used
+
 # serve with hot reload at localhost:3333
 npm run dev
 
